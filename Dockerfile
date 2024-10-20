@@ -1,7 +1,7 @@
 ARG VER=3.20.3
 ARG KUBE_LINT_VER=0.6.8
 FROM alpine:${VER}
-COPY mc kube-linter ash.rc /usr/bin/
+COPY ash.rc /usr/bin/
 
 RUN apk update && apk upgrade && apk add --no-cache nano sudo wget curl python3 py3-pip mysql-client git \
     openssh-client-default nfs-utils go sshpass tree bash shadow procps bind-tools util-linux coreutils \
