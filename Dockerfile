@@ -21,7 +21,7 @@ RUN wget https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint
 
     # install kube-linter
     curl -sSL https://github.com/stackrox/kube-linter/releases/download/${KUBE_LINT_VER}/kube-linter-linux -o /usr/bin/kube-linter && \
-    chmod +x /usr/bin/kube-linter
+    chmod +x /usr/bin/kube-linter && \
 
     # install mc
     curl -sSL https://dl.min.io/client/mc/release/linux-amd64/mc -o /usr/bin/mc && \
