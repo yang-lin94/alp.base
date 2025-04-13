@@ -3,7 +3,7 @@ ARG KUBE_LINT_VER=0.6.8
 FROM alpine:${VER}
 COPY ash.rc /usr/bin/
 
-RUN apk update && apk upgrade && apk add --no-cache nano sudo wget curl python3 py3-pip mysql-client git \
+RUN apk update && apk upgrade && apk add --no-cache nano neovim sudo wget curl python3 py3-pip mysql-client git \
     openssh-client-default nfs-utils go sshpass tree bash shadow procps bind-tools util-linux coreutils \
     binutils findutils grep libcap jq yq zip unzip fuse shellcheck && passwd -dl root && \
 
